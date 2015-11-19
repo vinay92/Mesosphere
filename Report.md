@@ -18,7 +18,7 @@ Multiple applications can be run using Mesosphere and the apps need a way to com
 * Zookeeper<br/>
 Zookeeper is the software that is used to coordinate the master nodes. There can be multiple master nodes, and the process of electing a master is coordinated by Zookeeper
 
-<h3> Mesosphere terminologies
+<h3> Mesosphere terminologies</h3>
 * Datacenter Operating System (DCOS)<br/>
 It is a new kind of Operating System that spans all machines in the datacenter or cloud and makes them act as one.
 * DCOS cluster<br/>
