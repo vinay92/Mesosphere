@@ -24,6 +24,9 @@ Note: While installing the DCOS CLI, make sure the full path of the installation
 
 5. Wait for 1-2 minutes for the app to deploy. You should be able to view it on the UI accessible through the Public DNS of the master which you can view in the output tab of the stack in your cloudformation stack page on the AWS console. 
 6. Now navigate to the public DNS of the public slave node and you should be able to see a web page like this:
+
+![alt text](./images/HelloWorld.png)
+
 7. Congrats!! you have successfully deployed a simple nginx web app to your mesosphere cluster. 
 
 <h3>Stopping a deployed application</h3>
