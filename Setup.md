@@ -20,7 +20,7 @@ Note: While installing the DCOS CLI, make sure the full path of the installation
 3. In the src directory the nginx.json file takes a docker image from the Mesosphere dockerhub. This image deploys an nginx server on the public slave node of the Mesosphere cluster and displays a message on the web page. 
 4. In order to deploy this app on the public slave node, execute the following command:
 
-``` dcos marathon app add nginx.json ```
+   ``` dcos marathon app add nginx.json ```
 
 5. Wait for 1-2 minutes for the app to deploy. You should be able to view it on the UI accessible through the Public DNS of the master which you can view in the output tab of the stack in your cloudformation stack page on the AWS console. 
 6. Now navigate to the public DNS of the public slave node and you should be able to see a web page like this:
