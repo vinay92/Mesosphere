@@ -51,7 +51,7 @@ Offers are the available resources that the slave offers
 * Service end-point elasticity for applications<br/>
 
 <h3> Disadvantages</h3>
-Mesosphere DCOS has the following limitaions for the community edition
+Mesosphere DCOS has the following limitations for the community edition<br/>
 * Must be run on supported cloud provider (eg, AWS)<br/>
 * Cannot be run on premise<br/>
 * Mesosphere only suports DCOS CE through community support channels, (eg Slack, Stack Overflow)<br/>
