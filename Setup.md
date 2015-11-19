@@ -56,3 +56,9 @@ The next set of instructions are meant to demonstrate how to deploy an instance 
    ``` dcos marathon app update /<id-of-the-app> instances=8```
    
 8. Now we can see that the number of tasks and the CPU usage etc. for each node which can viewed in the UI on the master, also increase. Hence we can scale up and scale down instances as and when needed. 
+
+<h3>References</h3>
+* https://docs.mesosphere.com/install/awscluster/
+* https://docs.mesosphere.com/install/cli/
+* https://docs.mesosphere.com/tutorials/deploywebapp/
+* https://docs.mesosphere.com/tutorials/deploywebapp-cassandra/
