@@ -16,7 +16,7 @@ Note: While installing the DCOS CLI, make sure the full path of the installation
 
 <h3>Deploying a sample web application to mesosphere cluster</h3>
 1. Clone this repository and copy the scripts in the src directory into your dcos directory created in the previous steps. 
-2. Make sure the DCOS CLI is pointed to the right Mesosphere cluster.(If you have installed the CLI correctly this is already done.)
+2. Make sure the DCOS CLI is pointed to the right Mesosphere cluster.(If you have installed the CLI correctly this is already done).
 3. In the src directory the nginx.json file takes a docker image from the Mesosphere dockerhub. This image deploys an nginx server on the public slave node of the Mesosphere cluster and displays a message on the web page. 
 4. In order to deploy this app on the public slave node, execute the following command:
 
@@ -32,3 +32,24 @@ If at any time you want to stop a marathon app, execute the following command:
 ``` dcos marathon app remove <id-of-the-app>```
 
 The id of the app is the name in the json. It can also be viewed through the web UI of the master. 
+
+<h3> Deploying a cassandra instance and installing an app on it in the cluster<h3>
+The next set of instructions are meant to demonstrate how to deploy an instance of cassandra runnning on the private nodes in the cluster and how to deploy a sample web application that stores its information in cassandra database.
+
+1. Cassandra is provided as a package to be installed in the mesosphere universe which is the default repository of libraries and packages for mesosphere. Hence in order to start a cassandra instance execute the following command:
+
+   ``` dcos package install cassandra```
+
+2. This installs Cassandra on the private nodes on the cluster. This takes about 10 minutes. For more information about how to configure cassandra with more granularity, refer to [this](https://docs.mesosphere.com/services/cassandra/) link.
+3. Next install the oinker application provided by mesosphere. This is a simple application that takes input from the user and prints on the web page. 
+4. Although this app is deployed on the private nodes, there is an edge router in the oinker application which sends the requests to and from the public slave node to the application. 
+5. To deploy the oinker application, navigate to the src folder and execute the DeployOinker.sh file which downloads the oinker application and the router application and also deploys these applications to the cluster. Execute the script using the following command:
+
+   ``` sh DeployOinker.sh```
+
+6. Once the application is deployed in the cluster, open the public slave node address in the browser and you can see the application is live and running. 
+7. This application can also be scaled up depending upon the requirements. For example, use the following command to scale up the application to 8 instances:
+
+   ``` dcos marathon app update /<id-of-the-app> instances=8```
+   
+8. Now we can see that the number of tasks and the CPU usage etc. for each node which can viewed in the UI on the master, also increase. Hence we can scale up and scale down instances as and when needed. 
