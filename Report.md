@@ -23,11 +23,20 @@ Zookeeper is the software that is used to coordinate the master nodes. There can
 It is a new kind of Operating System that spans all machines in the datacenter or cloud and makes them act as one.
 * DCOS cluster<br/>
 It is a group of nodes
-* DCOS service
+* DCOS service<br/>
 There are various datacenter services installable from Mesosphere repository
-* Framework
+* Framework<br/>
 Framework is a software that runs on top of Mesos. Each framewrok has its own scheduler and executor.
-* Scheduler
-A framework's scheduler 
+* Scheduler<br/>
+A framework's scheduler handles the deployment scheduling policies and resource assignment of tasks
+* Executor<br/>
+Executor is the part of the framework that actually performs the tasks on the slave nodes
+* Master<br/>
+It Aggregates resource offers from slaves and provides them to frameworks
+* Slave<br/>
+Runs a discrete Mesos task on behalf of a framework
+* Offers<br/>
+Offers are the available resources that the slave offers
+
 
 
