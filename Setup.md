@@ -33,7 +33,7 @@ If at any time you want to stop a marathon app, execute the following command:
 
 The id of the app is the name in the json. It can also be viewed through the web UI of the master. 
 
-<h3> Deploying a cassandra instance and installing an app on it in the cluster<h3>
+<h3>Deploying a cassandra instance and installing an app on it in the cluster<h3>
 The next set of instructions are meant to demonstrate how to deploy an instance of cassandra runnning on the private nodes in the cluster and how to deploy a sample web application that stores its information in cassandra database.
 
 1. Cassandra is provided as a package to be installed in the mesosphere universe which is the default repository of libraries and packages for mesosphere. Hence in order to start a cassandra instance execute the following command:
