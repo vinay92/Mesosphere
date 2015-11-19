@@ -5,6 +5,8 @@
 * It provides a highly elastic, and highly scalable way of deploying applications, services and big data infrastructure on shared resources. 
 * It takes care of deploying different applications on different nodes in our data center cluster.The DCOS can be used to launch thousands of containers in seconds, or deploy complex systems like Hadoop with a single command.
 * Mesosphere enables a way to easily scale applications by abstracting away many of the challenges associated with scaling.
+ 
+![alt text](./images/mesosphere.png)
 
 <h3>Mesosphere architecture</h3>
 * Marathon<br/>
@@ -17,6 +19,8 @@ Mesos is the distributed systems kernel at the core. It manages the hardware res
 Multiple applications can be run using Mesosphere and the apps need a way to communicate with each other. Mesos-DNS can be used for service discovery throught the domain name system.
 * Zookeeper<br/>
 Zookeeper is the software that is used to coordinate the master nodes. There can be multiple master nodes, and the process of electing a master is coordinated by Zookeeper
+
+![alt text](./images/mesos_architecture.png)
 
 <h3> Mesosphere terminologies</h3>
 * Datacenter Operating System (DCOS)<br/>
