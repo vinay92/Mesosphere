@@ -42,5 +42,25 @@ Runs a discrete Mesos task on behalf of a framework
 * Offers<br/>
 Offers are the available resources that the slave offers
 
+<h3> Advantages <h3/>
+* Application scheduling & scaling<br/>
+* Fault-tolerance and self-healing of applications<br/>
+* Application prioritization under load<br/>
+* Application Service port unification<br/>
+* Application service discovery<br/>
+* Service end-point elasticity for applications<br/>
+
+<h3> Limitations <h3/>
+Mesosphere DCOS has the following limitaions for the community edition
+* Must be run on supported cloud provider (eg, AWS)<br/>
+* Cannot be run on premise<br/>
+* Mesosphere only suports DCOS CE through community support channels, (eg Slack, Stack Overflow)<br/>
+* Cannot be provisioned into an existing VPC<br/>
+* Only supports AWS CloudFormation template in default config<br/>
+* Cannot run inside VPC over multiple availability zones<br/>
+
+
+
+
 
 
