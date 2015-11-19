@@ -42,7 +42,7 @@ Runs a discrete Mesos task on behalf of a framework
 * Offers<br/>
 Offers are the available resources that the slave offers
 
-<h3> Mesosphere terminologies</h3>
+<h3> Advantages</h3>
 * Application scheduling & scaling<br/>
 * Fault-tolerance and self-healing of applications<br/>
 * Application prioritization under load<br/>
@@ -50,7 +50,7 @@ Offers are the available resources that the slave offers
 * Application service discovery<br/>
 * Service end-point elasticity for applications<br/>
 
-<h3> Mesosphere terminologies</h3>
+<h3> Disadvantages</h3>
 Mesosphere DCOS has the following limitaions for the community edition
 * Must be run on supported cloud provider (eg, AWS)<br/>
 * Cannot be run on premise<br/>
