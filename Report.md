@@ -16,4 +16,6 @@ Mesos is the distributed systems kernel at the core. It manages the hardware res
 * Service discovery<br/>
 Multiple applications can be run using Mesosphere and the apps need a way to communicate with each other. Mesos-DNS can be used for service discovery throught the domain name system.
 * Zookeeper<br/>
+Zookeeper is the software that is used to coordinate the master nodes. There can be multiple master nodes, and the process of electing a master is coordinated by Zookeeper
+
 
