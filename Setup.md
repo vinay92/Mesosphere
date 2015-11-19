@@ -27,7 +27,7 @@ Note: While installing the DCOS CLI, make sure the full path of the installation
 
 ![alt text](./images/HelloWorld.png).
 
-7. Congrats!! you have successfully deployed a simple nginx web app to your mesosphere cluster. 
+CONGRATS!! you have successfully deployed a simple nginx web app to your mesosphere cluster. 
 
 <h3>Stopping a deployed application</h3>
 If at any time you want to stop a marathon app, execute the following command:
