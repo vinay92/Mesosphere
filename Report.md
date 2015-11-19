@@ -59,7 +59,11 @@ Mesosphere DCOS has the following limitaions for the community edition
 * Only supports AWS CloudFormation template in default config<br/>
 * Cannot run inside VPC over multiple availability zones<br/>
 
-
+<h3> References</h3>
+* http://docs.mesosphere.com/<br/>
+* http://techcrunch.com/2014/12/07/mesosphere-releases-first-data-center-os-and-announces-36m-in-funding/<br/>
+* https://www.digitalocean.com/community/tutorials/an-introduction-to-mesosphere<br/>
+* https://mesosphere.com/amazon/setup/<br/>
 
 
 
